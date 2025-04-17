@@ -2,19 +2,14 @@
 
 import React from 'react';
 import { View, Text, Button, ScrollView, StyleSheet } from 'react-native';
-import { useRouter } from 'expo-router';
+//import { useRouter } from 'expo-router';
 
 export default function HomeScreen() {
-  const router = useRouter();
-
+ 
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <View style={styles.inputGroup}>
-        <Text style={styles.title}>📦 Data Collector</Text>
-        <Text style={styles.description}>
-          Tap below to open the scanner and begin collecting data.
-        </Text>
-        <Button title="Open Scanner" onPress={() => router.push('scanner')} />
+        <Text>edit here</Text>
       </View>
     </ScrollView>
   );
@@ -32,16 +27,5 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     width: '100%',
     alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: '600',
-    marginBottom: 10,
-  },
-  description: {
-    fontSize: 16,
-    color: '#555',
-    marginBottom: 20,
-    textAlign: 'center',
-  },
+  }
 });
